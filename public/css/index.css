@@ -1,7 +1,39 @@
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
+
+  background: blue;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: rebeccapurple;
+}
+
+.box {
+  background: gray;
+}
+
+#user {
+  color: aqua;
+}
+
+h1,
+h2,
+button {
+  color: green;
 }
