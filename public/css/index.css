@@ -28,12 +28,48 @@ h1 {
   background: gray;
 }
 
-#user {
-  color: aqua;
+h1.button {
+  background: red;
+  color: black
 }
 
 h1,
-h2,
-button {
+h2#user,
+button.button#button {
   color: green;
+}
+
+#user,
+.user {
+  color: blue;
+}
+
+#bpx>p {
+  color: paleturquoise;
+}
+
+footer>.user {
+  color: palevioletred;
+}
+
+footer>h1 {
+  color: palevioletred;
+}
+
+footer em.child,
+footer div.child {
+  color: rgb(0, 247, 111);
+}
+
+.p-top {
+  background: black;
+}
+
+/* h1+p {
+  background: black;
+} */
+
+h1~p,
+H1~*>p {
+  background: black;
 }
