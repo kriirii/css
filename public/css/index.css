@@ -73,12 +73,59 @@ pre {
 	letter-spacing: 10%;
 }
 
-
-
-
 /* writing-mode: vertical-lr; робить текст вертикально */
 
 /* прибере рамку */
 /* .card {
     border:none;
 } */
+
+
+* {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	font-display: swap;
+
+
+	font-style: italic;
+}
+
+span {
+	font-size: larger;
+
+	font-weight: 900;
+
+	font-style: oblique;
+}
+
+/* варто перевіряти чи є  в посиланні 900 */
+
+* {
+	font-family: fantasy;
+}
+
+/* .test {
+	font-weight: lighter;
+} */
+
+.test {
+	display: none;
+}
+
+/* для того аби сховати */
+
+.block {
+	display: inline-block;
+	background: rgb(208, 208, 208);
+	margin: auto;
+
+	margin-left: 50px;
+	width: 250px;
+
+	height: auto;
+	min-height: 100px;
+	max-height: max-content;
+}
+
+/* width: min-content дає мін шпиринк до прерноса або кінця слова; */
