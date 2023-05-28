@@ -64,8 +64,8 @@ router.get('/template-1', function (req, res) {
 		},
 	  ],
 	  hero: {
-		title: 'Pricing',
-		text: "Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.",
+		title: 'Pri cing',
+		text: "Quickly build an effe&shy; &shy; ctive pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.",
 	  },
 	  plans: [
 		{

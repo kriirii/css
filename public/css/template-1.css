@@ -176,9 +176,84 @@
 
 .btn:hover {
 	box-shadow: 5px 5px 10px 1px rgba(116, 169, 255, 0.254);
-
 }
 
 h1 {
 	text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.221);
+}
+
+.plans_card:nth-child(2) {
+	visibility: hidden;
+}
+
+.hero_text {
+	background: gray;
+
+	max-width: 500px;
+	width: 500px;
+
+	hyphens: manual;
+
+	overflow: auto;
+
+	resize: both;
+
+	word-spacing: 10px;
+}
+
+.overflow {
+	overflow-wrap: anywhere;
+}
+
+.hero_title {
+	max-width: 660px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	height: 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+}
+
+body {
+	/* background-image: url('/img/test.png');
+	background-repeat: round; */
+
+	/* background-image: radial-gradient(50% 50% at 50% 50%,
+			rgba(127, 105, 255, 0.4) 0%,
+			rgba(255, 255, 255, 0) 100%
+	); */
+}
+
+.page {
+	/* background-color: transparent;
+	background-image: url('/img/test2.png');
+
+	background-repeat: no-repeat;
+
+	background-position: center right;
+
+	background-size: cover; */
+}
+
+.hero_text {
+	/* background-color: transparent; */
+	/* background-image: url('/img/test2.png'); */
+	/* background-attachment: fixed; */
+	/* border: 20px solid red;
+
+	background-clip: padding-box; */
+	padding: 40px;
+
+	color: #00ff48;
+
+	border-image-source: url('/img/test2.png');
+	border-image-width: 10% 10%;
+	border-image-slice: 10% 10%;
+	border-image-outset: 40px;
+
+
+
+
 }
