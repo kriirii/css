@@ -393,3 +393,64 @@
 :root {
 	scroll-behavior: smooth;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blog {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (width <=600px) {
+	.blog {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (600px < width <=800px) {
+	.blog {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* @media all and (max-width: 600px) {
+	.page_content {
+		background: red;
+	}
+} */
+
+.form {
+	gap: var(--space-l);
+}
+
+@media all and (width <=560px) {
+	.form {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.form_info {
+		max-width: 50%;
+	}
+
+
+
+}
