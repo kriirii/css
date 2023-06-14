@@ -1,3 +1,24 @@
+@import '/css/var.css';
+
+@font-face {
+	font-family: "Segment";
+	src: url('/font/Segment-Regular.otf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Segment";
+	src: url('/font/Segment-SemiBold.otf');
+	font-weight: 600;
+}
+
+
+@layer normalize,
+main,
+component,
+style;
+
+
 @keyframes fly {
 	from {
 		top: 0;
@@ -26,30 +47,6 @@
 		background: green;
 	}
 
-}
-
-:root {
-	--space-m: 12px;
-	--space-xm: 16px;
-	--space-l: 24px;
-	--space-b: 36px;
-
-	--size-s: 14px;
-	--size-d: 16px;
-	--size-l: 20px;
-
-	--color-border: #dee2e6;
-	--color-primary: rgb(46, 46, 255);
-	--color-white: #fff;
-	--color-title: #212529;
-	--color-text: #343a40;
-
-	--border-radius: 12px;
-
-	--weight-title: 500;
-	--weight-text: 400;
-
-	--page-width: 960px;
 }
 
 /*====================================*/
@@ -235,29 +232,33 @@
 	color: var(--color-text);
 }
 
-.button {
-	display: inline-block;
-	font-size: var(--size-d);
-	text-decoration: none;
-	padding: var(--size-s) var(--space-xm);
-	border-radius: var(--border-radius);
-	text-align: center;
+@layer main {
+	.button {
+		display: inline-block;
+		font-size: var(--size-d);
+		text-decoration: none;
+		padding: var(--size-s) var(--space-xm);
+		border-radius: var(--border-radius);
+		text-align: center;
 
-	transition: color 1s, background-color 1s;
+		transition: color 1s, background-color 1s;
 
-	transition-property: opadsity, background-color;
-	transition-duration: 1s;
+		transition-property: opadsity, background-color;
+		transition-duration: 1s;
+	}
+
+	.button:hover {
+		opacity: 0.7;
+		background-color: #ffff00;
+		color: red;
+	}
 }
 
-.card_button {
-	color: var(--color-white);
-	background-color: var(--color-primary);
-}
-
-.button:hover {
-	opacity: 0.7;
-	background-color: yellow;
-	color: red;
+@layer component {
+	.card_button {
+		color: var(--color-white);
+		background-color: var(--color-primary);
+	}
 }
 
 .form {
@@ -448,9 +449,55 @@
 	}
 
 	.form_info {
-		max-width: 50%;
+		max-width: 300px;
+		width: 100%;
+		line-height: 150%;
 	}
 
+	.form_content {
+		align-items: center;
+		text-align: center;
+	}
+}
 
+.hero_container {
+	container-type: inline-size;
+	container-name: hero;
+}
 
+@container hero (width < 960 px) {
+	.hero {
+		flex-direction: column;
+	}
+}
+
+@layer style {
+	.card_button {
+		background: red;
+	}
+}
+
+.ex {
+	display: inline-block;
+	font-size: 1.5em;
+	margin-left: 2ex;
+
+	line-height: 1.5em;
+}
+
+/* 
+.test {
+	position: absolute;
+	background: red;
+	top: 0;
+	left: 0;
+	height: 100vmin;
+	width: 100vmin;
+
+	z-index: 9999;
+} */
+
+.hero_title {
+	/* font-size: 10cqw; */
+	font-size: 5vw;
 }
