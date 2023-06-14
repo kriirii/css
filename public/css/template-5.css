@@ -384,7 +384,6 @@
 }
 
 .advantages>div:first-of-type {
-	place-self: flex-start flex-start;
 
 	/* justify-self: flex-start;
 	align-self: flex-start; */
